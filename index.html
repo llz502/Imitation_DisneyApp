@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+  .navbar{
+    position: relative;
+  }
+  .navbar .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(109, 108, 108, 0.488);
+  }
+  .navbar img{
+    opacity: .5;
+    display: block;
+  }
+  .navbar h1{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+    color: #FFF;
+    text-align: center;
+    font-size: 46px;
+    text-shadow: 0 0 40px black;
+  }
+  .navbar h2{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    color: #FFF;
+    text-align: center;
+    font-size: 27px;
+    text-shadow: 0 0 40px black;
+  }
+  .navbar .link{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    color: #FFF;
+    text-align: center;
+    font-size: 23px;
+    text-shadow: 0 0 40px black;
+  }
+  .navbar a{
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid #fff;
+  }
+  .content{
+    width: 66.7%;
+    margin: 0 auto;
+  }
+  .content h2{
+    margin: 30px 0 10px;
+    font-weight: 600;
+    font-size: 22px;
+    color: rgb(64, 64, 64);
+    line-height: 1.1;
+  }
+  .content p{
+    margin: 20px 0;
+    line-height: 2.5;
+    font-size: 16px;
+    color: #404040;
+  }
+  .content ul{
+    line-height: 2.5;
+    font-size: 16px;
+    color: #404040;
+    margin-left: 20px;
+  }
+  .content .function li{
+    margin-top: 30px;
+  }
+  .content .function img{
+    width: 460px;
+    display: block;
+  }
+  .content ul h3{
+    font-size: 16px;
+  }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <img src="./disney-home.png" alt="">
+    <div class="mask"></div>
+    <h1>Imitation_DisneyApp</h1>
+    <h2>作者：LiZhen Lin</h2>
+    <div class="link">
+      <a href="https://llz502.github.io/Imitation_DisneyApp/ImitationDisneyApp/dist/index.html">项目</a>
+      <a href="https://github.com/llz502/Imitation_DisneyApp/tree/master/ImitationDisneyApp">源码</a>
+    </div>
+  </div>
+  <div class="content">
+      <h2>为什么要做这个App</h2>
+      <p>
+        一开始，为了完全掌握vue-cli全家桶的用法，将vue、vuex、vue-router、vue-axios、vue-swipe、autoprefixer-loader、css-loader、babel、eslint、express、webpack、npm、bower等技术整合使用，然后翻墙到迪士尼美国官网作为模仿的项目
+      </p>
+      <h2>项目功能</h2>
+      <div class="function">
+        <ul>
+          <li>
+            网站包含大量迪士尼动漫人物、资讯、动漫、玩具
+            <img src="disney.png" alt="">
+          </li>
+          <li>
+            网站可以观看迪士尼动漫视频
+            <img src="disney-video.png" alt="">
+          </li>
+          <li>
+            网站是响应式网站，在屏幕小于一定宽度的时候，页面转换成移动端的页面
+            <img src="disney-mobile.png" alt="">
+          </li>
+        </ul>
+      </div>
+      <h2>技术选型</h2>
+      <p>
+        <ul>
+          <li>父子组件，通过data属性进行状态管理；在一些兄弟组件上，通过vuex进行总的状态管理，
+              路由控制，通过vue-router进行，路由控制</li>
+          <li>vue只是提供view层的方法，无法进行请求，vue-axio为view提供向外发出请求
+              引入vue-swipe提供方法，制作轮播图</li>
+          <li>autoprefixer-loader会为css样式提供前缀</li>
+          <li>babel可以将.vue文件转为.js文件</li>
+          <li>eslint进行代码检查</li>
+          <li>express开启服务器</li>
+          <li>webpack打包文件</li>
+          <li>bower、npm下载项目所需模块</li>
+        </ul>
+      </p>
+      <h2>目录结构</h2>
+      <p class="list">
+        <ul>
+          <li>
+            <h3>bower_components/</h3>使用bower下载模块
+          </li>
+          <li>
+            <h3>node_modules/</h3>使用npm下载模块
+          </li>
+          <li>
+            <h3>build/</h3>webpack开启服务器，打包文件的文件夹
+          </li>
+          <li>
+            <h3>config/</h3>配置文件
+          </li>
+          <li>
+            <h3>src/</h3>开发项目的文件夹
+          </li>
+          <li>
+            <h3>dist/</h3>打包往后的文件所在的文件夹
+          </li>
+        </ul>
+      </p>
+  </div>
+
+</body>
+</html>
