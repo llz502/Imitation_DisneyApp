@@ -212,8 +212,8 @@
     height: 44px;
     position: absolute;
     left: 50%;;
-    top: 50%;
-    transform: translate(-22px,44px);
+    top: 0;
+    transform: translate(-22px,0px);
 }
 .video_watch_container .video_watch_btn::after{
     content: "";
@@ -222,8 +222,8 @@
     border-left-color: white;
     position: absolute;
     left: 50%;;
-    top: 50%;
-    transform: translate(-6px,58px);
+    top: 0;
+    transform: translate(-6px,13px);
     height: 0;
     border-width: 8px 0 8px 16px;
 }

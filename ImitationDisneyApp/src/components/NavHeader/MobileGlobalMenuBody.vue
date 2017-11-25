@@ -15,10 +15,10 @@
                         <a href="javascript:;">Disney.sg</a>
                     </router-link>
                     <router-link to="/Video" tag="dt" active-class="active" class="video" @click.native="video=!video">
-                        <a href="javascript:;">Video</a>
+                        <a href="javascript:;">Videos</a>
                     </router-link>
                     <router-link to="/Video" tag="dd" active-class="active" v-show="video" @click.native="MGMenuBodyToggle()">
-                        <a href="javascript:;">Movies</a>
+                        <a href="javascript:;">Video</a>
                     </router-link>
                     <router-link to="/Video" tag="dd" active-class="active" v-show="video" @click.native="MGMenuBodyToggle()">
                         <a href="javascript:;">TV</a>

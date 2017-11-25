@@ -12,6 +12,7 @@ import NavHeader from './components/NavHeader.vue'
 import NavFooter from './components/Footer.vue'
 import {mapGetters} from 'vuex'
 
+
 export default {
   name: 'build',
   computed:mapGetters([
