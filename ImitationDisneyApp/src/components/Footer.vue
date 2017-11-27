@@ -159,4 +159,9 @@ export default {
 .NavFooter a:hover {
     color: #F323B5;
 }
+@media screen and (max-width: 1024px) {
+    .NavFooter {
+        display: none;
+    }
+}
 </style>
