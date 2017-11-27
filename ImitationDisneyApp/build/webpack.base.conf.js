@@ -51,7 +51,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: utils.assetsPath('Imitation_DisneyApp/ImitationDisneyApp/static/img/[name].[hash:7].[ext]')
+          name: utils.assetsPath('Imitation_DisneyApp/ImitationDisneyApp/dist/static/img/[name].[hash:7].[ext]')
         }
       },
       {
@@ -59,7 +59,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: utils.assetsPath('Imitation_DisneyApp/ImitationDisneyApp/static/media/[name].[hash:7].[ext]')
+          name: utils.assetsPath('Imitation_DisneyApp/ImitationDisneyApp/dist/static/media/[name].[hash:7].[ext]')
         }
       },
       {
