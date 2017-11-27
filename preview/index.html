@@ -12,6 +12,8 @@
     }
   .navbar{
     position: relative;
+    width: 100%;
+    padding-top: 45.27%;
   }
   .navbar .mask{
     width: 100%;
@@ -24,6 +26,10 @@
   .navbar img{
     opacity: .5;
     display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
   }
   .navbar h1{
     position: absolute;
@@ -87,14 +93,34 @@
   .content .function li{
     margin-top: 30px;
   }
+  .content .function .img-wrap{
+    position: relative;
+    width: 100%;
+  }
+  .content .function li:nth-of-type(1) .img-wrap{
+    padding-top: 189.61%;
+  }
+  .content .function li:nth-of-type(2) .img-wrap{
+    padding-top: 45.22%;
+  }
+  .content .function li:nth-of-type(3) .img-wrap{
+    padding-top: 141.03%;
+
+  }
   .content .function img{
-    width: 460px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
     display: block;
   }
   .content ul h3{
     font-size: 16px;
   }
   @media screen and (max-width: 768px) {
+    .navbar img{
+      width: 100%;
+    }
     .navbar h1{
       font-size: 23px;
     }
@@ -128,15 +154,21 @@
         <ul>
           <li>
             网站包含大量迪士尼动漫人物、资讯、动漫、玩具
-            <img src="disney.png" alt="">
+            <div class="img-wrap">
+              <img src="disney.png" alt="">
+            </div>
           </li>
           <li>
             网站可以观看迪士尼动漫视频
-            <img src="disney-video.png" alt="">
+            <div class="img-wrap">
+              <img src="disney-video.png" alt="">
+            </div>
           </li>
           <li>
             网站是响应式网站，在屏幕小于一定宽度的时候，页面转换成移动端的页面
-            <img src="disney-mobile.png" alt="">
+            <div class="img-wrap">
+              <img src="disney-mobile.png" alt="">
+            </div>
           </li>
         </ul>
       </div>
