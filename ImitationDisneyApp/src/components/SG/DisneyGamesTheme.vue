@@ -14,6 +14,13 @@
     </div>
 </template>
 <script>
+// export default {
+//   data () {
+//     return {
+//       imgUrl: 'https://i.loli.net/2017/11/27/5a1c04f33c478.jpeg' // String../../assets/images/DisneyGamesTheme.jpeg
+//     }
+//   }
+// }
 </script>
 <style scoped>
     .sg_game_wrap {

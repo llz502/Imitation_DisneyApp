@@ -3,17 +3,17 @@
         <Swipe class="my-swipe">
             <SwipeItem class="slide1 slide">
                 <div class="img_wrap">
-                    <img src="../../assets/images/slide1.jpg" alt="image">
+                    <img v-lazy="imgUrl1" alt="image">
                 </div>
             </SwipeItem>
             <SwipeItem class="slide2 slide">
                 <div class="img_wrap">
-                    <img src="../../assets/images/slide2.jpg" alt="image">
+                    <img v-lazy="imgUrl2" alt="image">
                 </div>
             </SwipeItem>
             <SwipeItem class="slide3 slide">
                 <div class="img_wrap">
-                    <img src="../../assets/images/slide3.jpg" alt="image">
+                    <img v-lazy="imgUrl3" alt="image">
                 </div>
             </SwipeItem>
         </Swipe>
@@ -22,6 +22,13 @@
 <script>
 import { Swipe, SwipeItem } from 'vue-swipe';
 export default {
+    data () {
+        return {
+        imgUrl1: 'https://i.loli.net/2017/11/27/5a1c07ce30ca0.jpg', // String../../assets/images/JointheDisneyMagicTheme.jpeg
+        imgUrl2: 'https://i.loli.net/2017/11/27/5a1c084e48ef0.jpg', // String../../assets/images/JointheDisneyMagicTheme.jpeg
+        imgUrl3: 'https://i.loli.net/2017/11/27/5a1c0864c6b3c.jpg' // String../../assets/images/JointheDisneyMagicTheme.jpeg
+        }
+    },
     mounted(){
     },
     watch:{

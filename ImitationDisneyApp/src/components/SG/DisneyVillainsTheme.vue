@@ -14,6 +14,13 @@
     </div>
 </template>
 <script>
+// export default {
+//   data () {
+//     return {
+//       imgUrl: 'https://i.loli.net/2017/11/27/5a1c0583766c3.jpeg' // String../../assets/images/DisneyVillainsTheme.jpeg
+//     }
+//   }
+// }
 </script>
 <style scoped>
     .sg_app_wrap {

@@ -13,8 +13,15 @@
         </ul>
     </div>
 </template>
-<script>
-</script>
+<!-- <script>
+export default {
+  data () {
+    return {
+      imgUrl: 'https://i.loli.net/2017/11/27/5a1c05d40fa78.jpeg' // String../../assets/images/DreamBigPrincessTheme.jpeg
+    }
+  }
+}
+</script> -->
 <style scoped>
     .sg_character_wrap {
         width: 100%;
