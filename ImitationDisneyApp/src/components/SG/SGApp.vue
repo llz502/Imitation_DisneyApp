@@ -6,28 +6,28 @@
                 <router-link to="/Movies" tag="div" class="movie" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-app1.png" alt="图片">
+                            <img v-lazy="imgUrls[1]" alt="图片">
                         </div>
                     </a>
                 </router-link>
                 <router-link to="/Movies" tag="div" class="movie" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-app2.png" alt="图片">
+                            <img v-lazy="imgUrls[2]" alt="图片">
                         </div>
                     </a>
                 </router-link>
                 <router-link to="/Movies" tag="div" class="movie" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-app3.png" alt="图片">
+                            <img v-lazy="imgUrls[3]" alt="图片">
                         </div>
                     </a>
                 </router-link>
                 <router-link to="/Movies" tag="div" class="movie" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-app4.jpeg" alt="图片">
+                            <img v-lazy="imgUrls[4]" alt="图片">
                         </div>
                     </a>
                 </router-link>
@@ -36,42 +36,52 @@
                 <router-link to="/Movies" tag="div" class="movie" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-app5.png" alt="图片">
+                            <img v-lazy="imgUrls[5]" alt="图片">
                         </div>
                     </a>
                 </router-link>
                 <router-link to="/Movies" tag="div" class="movie" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-app6.png" alt="图片">
+                            <img v-lazy="imgUrls[6]" alt="图片">
                         </div>
                     </a>
                 </router-link>
                 <router-link to="/Movies" tag="div" class="movie" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-app7.jpeg" alt="图片">
+                            <img v-lazy="imgUrls[7]" alt="图片">
                         </div>
                     </a>
                 </router-link>
                 <router-link to="/Movies" tag="div" class="movie" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-app8.png" alt="图片">
+                            <img v-lazy="imgUrls[0]" alt="图片">
                         </div>
                     </a>
                 </router-link>
             </li>
         </ul>
-        <button class="movie_left movie_btn" @click="left=true">左</button>
-        <button class="movie_right movie_btn" @click="left=false">右</button>
+        <button class="movie_left movie_btn" @click="left=true"></button>
+        <button class="movie_right movie_btn" @click="left=false"></button>
     </div>
 </template>
 <script>
 export default {
     data(){
         return {
-            left:true
+            left:true,
+            imgUrls:[
+                "https://i.loli.net/2017/11/27/5a1c154e0ea70.png",
+                "https://i.loli.net/2017/11/27/5a1c157f865c1.jpeg",
+                "https://i.loli.net/2017/11/27/5a1c157fe66ff.jpeg",
+                "https://i.loli.net/2017/11/27/5a1c15810e510.png",
+                "https://i.loli.net/2017/11/27/5a1c158240d7c.png",
+                "https://i.loli.net/2017/11/27/5a1c1582b26bd.png",
+                "https://i.loli.net/2017/11/27/5a1c1583b8beb.png",
+                "https://i.loli.net/2017/11/27/5a1c15852c558.png"
+            ]
         }
     },
     computed:{

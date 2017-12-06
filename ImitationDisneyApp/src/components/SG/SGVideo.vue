@@ -3,17 +3,10 @@
         <h2 class="title">Featured Videos</h2>
         <ul class="video_list" :class="{right,left}">
             <li>
-                <router-link to="/Video" tag="div" class="video" active-class="active">
+                <router-link v-for="{imgUrl,index} in imgUrls" :key="index" to="/Video" tag="div" class="video" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-video1.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Video" tag="div" class="video" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/sg-video2.jpeg" alt="图片">
+                            <img :src="imgUrl" alt="图片">
                         </div>
                     </a>
                 </router-link>
@@ -27,7 +20,11 @@
 export default {
     data(){
         return {
-            left:true
+            left:true,
+            imgUrls:[
+                '../../assets/images/sg-video1.jpeg',
+                '../../assets/images/sg-video2.jpeg'
+            ]
         }
     },
     computed:{

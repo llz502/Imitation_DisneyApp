@@ -3,24 +3,10 @@
         <h2 class="title">Trailers & Clips</h2>
         <ul class="Movie_list" :class="{right,left}">
             <li>
-                <router-link to="/Movie" tag="div" class="Movie" active-class="active">
+                <router-link v-for="{imgUrl,index} in imgUrls" :key="index" to="/Movie" tag="div" class="Movie" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/Movie-clip1.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Movie" tag="div" class="Movie" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/Movie-clip2.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Movie" tag="div" class="Movie" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/Movie-clip3.jpg" alt="图片">
+                            <img v-lazy="imgUrl" alt="图片">
                         </div>
                     </a>
                 </router-link>
@@ -34,7 +20,12 @@
 export default {
     data(){
         return {
-            left:true
+            left:true,
+            imgUrls:[
+                "https://i.loli.net/2017/12/01/5a21091c9168a.jpeg",
+                "https://i.loli.net/2017/12/01/5a21091c01f84.jpeg",
+                "https://i.loli.net/2017/12/01/5a21091bc2855.jpg"
+            ]
         }
     },
     computed:{

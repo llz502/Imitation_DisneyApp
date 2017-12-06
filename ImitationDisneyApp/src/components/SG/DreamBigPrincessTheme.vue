@@ -5,7 +5,7 @@
                 <router-link to="/Characters" tag="div" class="character" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/DreamBigPrincessTheme.jpeg" alt="图片">
+                            <img v-lazy="imgUrl" alt="图片">
                         </div>
                     </a>
                 </router-link>
@@ -13,15 +13,15 @@
         </ul>
     </div>
 </template>
-<!-- <script>
+<script>
 export default {
   data () {
     return {
-      imgUrl: 'https://i.loli.net/2017/11/27/5a1c05d40fa78.jpeg' // String../../assets/images/DreamBigPrincessTheme.jpeg
+      imgUrl: '../../assets/images/DreamBigPrincessTheme.jpeg' // String../../assets/images/DreamBigPrincessTheme.jpeg
     }
   }
 }
-</script> -->
+</script>
 <style scoped>
     .sg_character_wrap {
         width: 100%;

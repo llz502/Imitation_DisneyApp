@@ -10,7 +10,7 @@
                 <div class="img_wrap">
                     <img v-lazy="imgUrl2" alt="image">
                 </div>
-            </SwipeItem>
+                </SwipeItem>
             <SwipeItem class="slide3 slide">
                 <div class="img_wrap">
                     <img v-lazy="imgUrl3" alt="image">
@@ -24,14 +24,16 @@ import { Swipe, SwipeItem } from 'vue-swipe';
 export default {
     data () {
         return {
-        imgUrl1: 'https://i.loli.net/2017/11/27/5a1c07ce30ca0.jpg', // String../../assets/images/JointheDisneyMagicTheme.jpeg
-        imgUrl2: 'https://i.loli.net/2017/11/27/5a1c084e48ef0.jpg', // String../../assets/images/JointheDisneyMagicTheme.jpeg
-        imgUrl3: 'https://i.loli.net/2017/11/27/5a1c0864c6b3c.jpg' // String../../assets/images/JointheDisneyMagicTheme.jpeg
+            imgUrl1: {
+                src: 'https://i.loli.net/2017/11/27/5a1c07ce30ca0.jpg'
+            }, // String../../assets/images/
+            imgUrl2: {
+                src: 'https://i.loli.net/2017/11/27/5a1c084e48ef0.jpg'
+            }, // String../../assets/images/
+            imgUrl3: {
+                src: 'https://i.loli.net/2017/11/27/5a1c0864c6b3c.jpg'
+            } // String../../assets/images/
         }
-    },
-    mounted(){
-    },
-    watch:{
     },
     components:{
          Swipe,
@@ -49,21 +51,22 @@ export default {
 .mint-swipe,.mint-swipe-items-wrap {
 	overflow: hidden;
 	position: relative;
-	height: 100%;
+    width: 100%;
 }
 
 .mint-swipe-items-wrap {
 	-webkit-transform: translateZ(0);
-	transform: translateZ(0)
+	transform: translateZ(0);
 }
 
 .mint-swipe-items-wrap>div {
-	position: absolute;
+    position: absolute;
 	-webkit-transform: translateX(-100%);
 	transform: translateX(-100%);
 	width: 100%;
 	height: 100%;
-	display: none
+	display: none;
+
 }
 
 .mint-swipe-items-wrap>div.is-active {
@@ -148,7 +151,7 @@ export default {
     }
     .my-swipe .slide img {
         font-size: 35px;
-        line-height: 400px;    
+        line-height: 400px;  
     }
 }
 @media screen and (max-width:768px) {
@@ -156,8 +159,8 @@ export default {
         height: 200px;
     }
     .my-swipe .slide img {
-        font-size: 27px;
-        line-height: 200px;    
+        font-size: 27px;  
+        line-height: 200px;   
     }
 }
 @media screen and (max-width:475.23px) {
@@ -166,7 +169,7 @@ export default {
     }
     .my-swipe .slide img {
         font-size: 17px;
-        line-height: 100px;    
+        height: 100px;
     }
 }
 

@@ -59,5 +59,9 @@ export default [
   { 
     path: '/', 
     redirect: '/SG' 
+  },
+  { 
+    path: '*', 
+    redirect: '/SG' 
   }
 ]

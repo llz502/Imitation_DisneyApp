@@ -20,7 +20,6 @@ export default {
   ]),
   watch: {
     $route(to,from){
-      console.log(to.path)
       if (to.path==='/Parks'){
         this.$store.dispatch('HideFoot')
       } else {

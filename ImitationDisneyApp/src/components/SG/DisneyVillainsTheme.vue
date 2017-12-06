@@ -5,7 +5,7 @@
                 <router-link to="/Apps" tag="div" class="app" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/DisneyVillainsTheme.jpeg" alt="图片">
+                            <img v-lazy="imgUrl" alt="图片">
                         </div>
                     </a>
                 </router-link>
@@ -14,13 +14,13 @@
     </div>
 </template>
 <script>
-// export default {
-//   data () {
-//     return {
-//       imgUrl: 'https://i.loli.net/2017/11/27/5a1c0583766c3.jpeg' // String../../assets/images/DisneyVillainsTheme.jpeg
-//     }
-//   }
-// }
+export default {
+  data () {
+    return {
+      imgUrl: 'https://i.loli.net/2017/11/27/5a1c0583766c3.jpeg' // String../../assets/images/DisneyVillainsTheme.jpeg
+    }
+  }
+}
 </script>
 <style scoped>
     .sg_app_wrap {

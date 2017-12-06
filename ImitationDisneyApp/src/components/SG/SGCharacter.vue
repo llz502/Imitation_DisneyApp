@@ -2,49 +2,9 @@
     <div class="sg_character_wrap">
         <h2 class="title">characters</h2>
         <ul class="character_list">
-            <router-link to="/Characters" tag="li" active-class="active">
+            <router-link v-for="{imgUrl,index} in imgUrls" :key="index" to="/Characters" tag="li" active-class="active">
                 <a href="javascript:;">
-                    <img src="../../assets/images/character1.jpg" alt="图片">
-                </a>
-                <a href="javascript:;">
-                    <b>Mitch and his friends</b>
-                </a>
-            </router-link>
-            <router-link to="/Characters" tag="li" active-class="active">
-                <a href="javascript:;">
-                    <img src="../../assets/images/character2.jpg" alt="图片">
-                </a>
-                <a href="javascript:;">
-                    <b>Snow White</b>
-                </a>
-            </router-link>
-            <router-link to="/Characters" tag="li" active-class="active">
-                <a href="javascript:;">
-                    <img src="../../assets/images/character3.jpg" alt="图片">
-                </a>
-                <a href="javascript:;">
-                    <b>Die-cast cars</b>
-                </a>
-            </router-link>
-            <router-link to="/Characters" tag="li" active-class="active">
-                <a href="javascript:;">
-                    <img src="../../assets/images/character4.jpg" alt="图片">
-                </a>
-                <a href="javascript:;">
-                    <b>Little princess Su Feiya</b>
-                </a>
-            </router-link>
-            <router-link to="/Characters" tag="li" active-class="active">
-                <a href="javascript:;">
-                    <img src="../../assets/images/character5.jpg" alt="图片">
-                </a>
-                <a href="javascript:;">
-                    <b>Soundtrack</b>
-                </a>
-            </router-link>
-            <router-link to="/Characters" tag="li" active-class="active">
-                <a href="javascript:;">
-                    <img src="../../assets/images/character6.jpg" alt="图片">
+                    <img v-lazy="imgUrl" alt="图片">
                 </a>
                 <a href="javascript:;">
                     <b>Mitch and his friends</b>
@@ -53,6 +13,22 @@
         </ul>
     </div>
 </template>
+<script>
+export default {
+    data(){
+        return {
+            imgUrls:[
+                "https://i.loli.net/2017/12/01/5a21117cde7fe.jpgg",
+                "https://i.loli.net/2017/12/01/5a21117cdd076.jpg",
+                "https://i.loli.net/2017/12/01/5a21117cdb93c.jpg",
+                "https://i.loli.net/2017/12/01/5a21117cd6087.jpg",
+                "https://i.loli.net/2017/12/01/5a21117cd072d.jpg",
+                "https://i.loli.net/2017/12/01/5a21117c13c49.jpg"
+            ]
+        }
+    }
+}
+</script>
 <style scoped>
 .sg_character_wrap {
     text-align: center;

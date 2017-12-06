@@ -2,62 +2,20 @@
     <div class="sg_Video_wrap">
         <h2 class="title">Trailers & Clips</h2>
         <ul class="Video_list" :class="{right,left}">
-                <li>
-                    <router-link to="/Video" tag="div" class="Video" active-class="active">
-                        <a href="javascript:;">
-                            <div class="img_wrap">
-                                <img src="../../assets/images/game-quizz1.jpeg" alt="图片">
-                            </div>
-                        </a>
-                    </router-link>
-                    <router-link to="/Video" tag="div" class="Video" active-class="active">
-                        <a href="javascript:;">
-                            <div class="img_wrap">
-                                <img src="../../assets/images/game-quizz2.jpeg" alt="图片">
-                            </div>
-                        </a>
-                    </router-link>
-                    <router-link to="/Video" tag="div" class="Video" active-class="active">
-                        <a href="javascript:;">
-                            <div class="img_wrap">
-                                <img src="../../assets/images/game-quizz3.jpeg" alt="图片">
-                            </div>
-                        </a>
-                    </router-link>
-                    <router-link to="/Video" tag="div" class="Video" active-class="active">
-                        <a href="javascript:;">
-                            <div class="img_wrap">
-                                <img src="../../assets/images/game-quizz4.jpeg" alt="图片">
-                            </div>
-                        </a>
-                    </router-link>
-                </li>
             <li>
-                <router-link to="/Video" tag="div" class="Video" active-class="active">
+                <router-link v-for="{imgUrl,index} in imgUrls1" :key="index" to="/Video" tag="div" class="Video" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/game-quizz5.jpeg" alt="图片">
+                            <img v-lazy="imgUrl" alt="图片">
                         </div>
                     </a>
                 </router-link>
-                <router-link to="/Video" tag="div" class="Video" active-class="active">
+            </li>
+            <li>
+                <router-link v-for="{imgUrl,index} in imgUrls2" :key="index" to="/Video" tag="div" class="Video" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/game-quizz6.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Video" tag="div" class="Video" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/game-quizz7.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Video" tag="div" class="Video" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/game-quizz8.jpeg" alt="图片">
+                            <img v-lazy="imgUrl" alt="图片">
                         </div>
                     </a>
                 </router-link>
@@ -66,6 +24,24 @@
     </div>
 </template>
 <script>
+    export default {
+        data(){
+            return {
+                imgUrls1:[
+                    "https://i.loli.net/2017/12/01/5a210a8d70ecc.jpeg",
+                    "https://i.loli.net/2017/12/01/5a210a8d7aeb0.jpeg",
+                    "https://i.loli.net/2017/12/01/5a210a8d8126f.jpeg",
+                    "https://i.loli.net/2017/12/01/5a210a8d95712.jpeg"
+                ],
+                imgUrls2:[
+                    "https://i.loli.net/2017/12/01/5a210b453ee04.jpeg",
+                    "https://i.loli.net/2017/12/01/5a210b4567fd1.jpeg",
+                    "https://i.loli.net/2017/12/01/5a210b459ba49.jpeg",
+                    "https://i.loli.net/2017/12/01/5a210b4605f8e.jpeg"
+                ]
+            }
+        }
+    }
 </script>
 <style scoped>
     .sg_Video_wrap {

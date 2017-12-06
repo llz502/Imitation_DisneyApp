@@ -43,6 +43,7 @@ module.exports = {
     'new-parens': 'off',
     'eqeqeq': 'off',
     'operator-linebreak': 'off',
-    'space-in-parens': 'off'
+    'space-in-parens': 'off',
+    'quotes': 'off'
   }
 }

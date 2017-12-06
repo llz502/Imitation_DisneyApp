@@ -5,7 +5,7 @@
                 <router-link to="/Games" tag="div" class="game" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/DisneyGamesTheme.jpeg" alt="图片">
+                            <img v-lazy="imgUrl" alt="图片">
                         </div>
                     </a>
                 </router-link>
@@ -14,13 +14,13 @@
     </div>
 </template>
 <script>
-// export default {
-//   data () {
-//     return {
-//       imgUrl: 'https://i.loli.net/2017/11/27/5a1c04f33c478.jpeg' // String../../assets/images/DisneyGamesTheme.jpeg
-//     }
-//   }
-// }
+export default {
+  data () {
+    return {
+      imgUrl: 'https://i.loli.net/2017/11/27/5a1c04f33c478.jpeg' // String../../assets/images/DisneyGamesTheme.jpeg
+    }
+  }
+}
 </script>
 <style scoped>
     .sg_game_wrap {

@@ -10,7 +10,10 @@
             <div class="up_next">up-next</div>
             <ul class="items_container">
                 <li class="item">
-                    <img src="../../assets/images/video-latest1.jpeg" alt="" >
+                    <span class="play_btn"></span>
+                    <div class="img_wrap">
+                        <img src="../../assets/images/video-latest1.jpeg" alt="" >
+                    </div>
                     <span class="audio_nowplaying audio_btn" v-show="nowplaying1" @click="nowplaying1=!nowplaying1"></span><span class="audio_pause audio_btn" v-show="noplaying1" @click="nowplaying1=!nowplaying1"></span>                    
                     <span class="item_info">
                         <h3>A Wrinkle in Time | Teaser Trailer</h3>
@@ -19,6 +22,10 @@
                     </span>
                 </li>
                 <li class="item">
+                    <span class="play_btn"></span>
+                    <div class="img_wrap">
+                        <span class="play_btn"></span>
+                    </div>
                     <img src="../../assets/images/video-latest2.jpeg" alt="" >
                     <span class="audio_nowplaying audio_btn" v-show="nowplaying2" @click="nowplaying2=!nowplaying2"></span><span class="audio_pause audio_btn" v-show="noplaying2" @click="nowplaying2=!nowplaying2"></span>
                     <span class="item_info">
@@ -29,7 +36,9 @@
                 </li>
                 <li class="item">
                     <span class="play_btn"></span>
-                    <img src="../../assets/images/video-latest3.jpeg" alt="" >
+                    <div class="img_wrap">
+                        <img src="../../assets/images/video-latest3.jpeg" alt="" >
+                    </div>
                     <span class="audio_nowplaying audio_btn" v-show="nowplaying3" @click="nowplaying3=!nowplaying3"></span><span class="audio_pause audio_btn" v-show="noplaying3" @click="nowplaying3=!nowplaying3"></span>                    
                     <span class="item_info">
                         <h3>A Wrinkle in Time | Teaser Trailer</h3>
@@ -38,7 +47,10 @@
                     </span>
                 </li>
                 <li class="item">
-                    <img src="../../assets/images/video-latest4.jpeg" alt="" >
+                    <span class="play_btn"></span>
+                    <div class="img_wrap">
+                        <img src="../../assets/images/video-latest4.jpeg" alt="" >
+                    </div>
                     <span class="audio_nowplaying audio_btn" v-show="nowplaying4" @click="nowplaying4=!nowplaying4"></span><span class="audio_pause audio_btn" v-show="noplaying4" @click="nowplaying4=!nowplaying4"></span>
                     <span class="item_info">
                         <h3>A Wrinkle in Time | Teaser Trailer</h3>
@@ -48,7 +60,9 @@
                 </li>
                 <li class="item">
                     <span class="play_btn"></span>
-                    <img src="../../assets/images/video-latest5.jpeg" alt="" >
+                    <div class="img_wrap">
+                        <img src="../../assets/images/video-latest5.jpeg" alt="" >
+                    </div>
                     <span class="audio_nowplaying audio_btn" v-show="nowplaying5" @click="nowplaying5=!nowplaying5"></span><span class="audio_pause audio_btn" v-show="noplaying5" @click="nowplaying5=!nowplaying5"></span>                                            
                     <span class="item_info">
                         <h3>A Wrinkle in Time | Teaser Trailer</h3>
@@ -57,7 +71,10 @@
                     </span>
                 </li>
                 <li class="item">
-                    <img src="../../assets/images/video-latest6.jpeg" alt="" >
+                    <span class="play_btn"></span>
+                    <div class="img_wrap">
+                        <img src="../../assets/images/video-latest6.jpeg" alt="" >
+                    </div>
                     <span class="audio_nowplaying audio_btn" v-show="nowplaying6" @click="nowplaying6=!nowplaying6"></span><span class="audio_pause audio_btn" v-show="noplaying6" @click="nowplaying7=!nowplaying6"></span>
                     <span class="item_info">
                         <h3>A Wrinkle in Time | Teaser Trailer</h3>
@@ -66,7 +83,10 @@
                     </span>
                 </li>
                 <li class="item">
-                    <img src="../../assets/images/video-latest7.jpeg" alt="" >
+                    <span class="play_btn"></span>
+                    <div class="img_wrap">
+                        <img src="../../assets/images/video-latest7.jpeg" alt="" >
+                    </div>
                     <span class="audio_nowplaying audio_btn" v-show="nowplaying7" @click="nowplaying7=!nowplaying7"></span><span class="audio_pause audio_btn" v-show="noplaying7" @click="nowplaying7=!nowplaying7"></span>
                     <span class="item_info">
                         <h3>A Wrinkle in Time | Teaser Trailer</h3>
@@ -75,7 +95,10 @@
                     </span>
                 </li>
                 <li class="item">
-                    <img src="../../assets/images/video-latest8.jpeg" alt="" >
+                    <span class="play_btn"></span>
+                    <div class="img_wrap">
+                        <img src="../../assets/images/video-latest8.jpeg" alt="" >
+                    </div>
                     <span class="audio_nowplaying audio_btn" v-show="nowplaying8" @click="nowplaying8=!nowplaying8"></span><span class="audio_pause audio_btn" v-show="noplaying8" @click="nowplaying8=!nowplaying8"></span>
                     <span class="item_info">
                         <h3>A Wrinkle in Time | Teaser Trailer</h3>
@@ -84,7 +107,9 @@
                     </span>
                 </li>
                 <li class="item">
-                    <img src="../../assets/images/video-latest9.jpeg" alt="" >
+                    <div class="img_wrap">
+                        <img src="../../assets/images/video-latest9.jpeg" alt="" >
+                    </div>
                     <span class="audio_nowplaying audio_btn" v-show="nowplaying9" @click="nowplaying9=!nowplaying9"></span><span class="audio_pause audio_btn" v-show="noplaying9" @click="nowplaying9=!nowplaying9"></span>
                     <span class="item_info">
                         <h3>A Wrinkle in Time | Teaser Trailer</h3>
@@ -93,7 +118,10 @@
                     </span>
                 </li>
                 <li class="item">
-                    <img src="../../assets/images/video-latest10.jpeg" alt="" >
+                    <span class="play_btn"></span>
+                    <div class="img_wrap">
+                        <img src="../../assets/images/video-latest10.jpeg" alt="" >
+                    </div>
                     <span class="audio_nowplaying audio_btn" v-show="nowplaying10" @click="nowplaying10=!nowplayin10g"></span><span class="audio_pause audio_btn" v-show="noplaying10" @click="nowplaying10=!nowplaying10"></span>
                     <span class="item_info">
                         <h3>A Wrinkle in Time | Teaser Trailer</h3>

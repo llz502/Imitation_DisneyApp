@@ -10,8 +10,8 @@ import VueLazyload from 'vue-lazyload'
 
 Vue.use(VueLazyload, {
   preLoad: 1.3,
-  error: './assets/images/error.gif',
-  loading: './assets/images/loading.gif',
+  error: 'https://i.loli.net/2017/11/27/5a1c107cde803.gif',
+  loading: 'https://i.loli.net/2017/11/27/5a1c14e471fc4.gif',
   attempt: 1
 })
 

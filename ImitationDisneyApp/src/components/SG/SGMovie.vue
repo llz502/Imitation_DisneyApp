@@ -3,47 +3,19 @@
         <h2 class="title">New & Upcoming Movies</h2>
         <ul class="movie_list" :class="{right,left}">
             <li>
-                <router-link to="/Movies" tag="div" class="movie" active-class="active">
+                <router-link v-for="{imgUrl,index} in imgUrls1" :key="index" to="/Movies" tag="div" class="movie" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-movie1.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Movies" tag="div" class="movie" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/sg-movie2.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Movies" tag="div" class="movie" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/sg-movie3.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Movies" tag="div" class="movie" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/sg-movie4.jpeg" alt="图片">
+                            <img v-lazy="imgUrl" alt="图片">
                         </div>
                     </a>
                 </router-link>
             </li>
             <li>
-                <router-link to="/Movies" tag="div" class="movie" active-class="active">
+                <router-link v-for="{imgUrl,index} in imgUrls2" :key="index" to="/Movies" tag="div" class="movie" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-movie5.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Movies" tag="div" class="movie" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/sg-movie6.jpeg" alt="图片">
+                            <img v-lazy="imgUrl" alt="图片">
                         </div>
                     </a>
                 </router-link>
@@ -57,7 +29,19 @@
 export default {
     data(){
         return {
-            left:true
+            left:true,
+            imgUrls1:[
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2b1098b93.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2b10a557a.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2b110821a.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2b113fda2.jpeg'
+            ],
+            imgUrls2:[
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2b10a557a.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2b110821a.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2b115a4f6.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2b1160ab8.jpeg'
+            ]
         }
     },
     computed:{

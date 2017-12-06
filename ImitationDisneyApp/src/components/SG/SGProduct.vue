@@ -6,58 +6,28 @@
                 <router-link to="/Products" tag="div" class="product" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-product1.jpeg" alt="图片">
+                            <img v-lazy="imgUrls1[0]" alt="图片">
                         </div>
                     </a>
                 </router-link>
                 <router-link to="/Products" tag="div" class="product" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-product2.jpeg" alt="图片">
+                            <img v-lazy="imgUrls1[1]" alt="图片">
                         </div>
                     </a>
                 </router-link>
                 <router-link to="/Products" tag="div" class="product" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-product3.jpeg" alt="图片">
+                            <img v-lazy="imgUrls1[2]" alt="图片">
                         </div>
                     </a>
                 </router-link>
                 <router-link to="/Products" tag="div" class="product" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-product4.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-            </li>
-            <li>
-                <router-link to="/Products" tag="div" class="product" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/sg-product5.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Products" tag="div" class="product" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/sg-product6.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Products" tag="div" class="product" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/sg-product7.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Products" tag="div" class="product" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/sg-product8.jpeg" alt="图片">
+                            <img v-lazy="imgUrls1[3]" alt="图片">
                         </div>
                     </a>
                 </router-link>
@@ -66,28 +36,58 @@
                 <router-link to="/Products" tag="div" class="product" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-product9.jpeg" alt="图片">
+                            <img v-lazy="imgUrls2[0]" alt="图片">
                         </div>
                     </a>
                 </router-link>
                 <router-link to="/Products" tag="div" class="product" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-product10.jpeg" alt="图片">
+                            <img v-lazy="imgUrls2[1]" alt="图片">
                         </div>
                     </a>
                 </router-link>
                 <router-link to="/Products" tag="div" class="product" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-product11.jpeg" alt="图片">
+                            <img v-lazy="imgUrls2[2]" alt="图片">
                         </div>
                     </a>
                 </router-link>
                 <router-link to="/Products" tag="div" class="product" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/sg-product12.jpeg" alt="图片">
+                            <img v-lazy="imgUrls2[3]" alt="图片">
+                        </div>
+                    </a>
+                </router-link>
+            </li>
+            <li>
+                <router-link to="/Products" tag="div" class="product" active-class="active">
+                    <a href="javascript:;">
+                        <div class="img_wrap">
+                            <img v-lazy="imgUrls3[0]" alt="图片">
+                        </div>
+                    </a>
+                </router-link>
+                <router-link to="/Products" tag="div" class="product" active-class="active">
+                    <a href="javascript:;">
+                        <div class="img_wrap">
+                            <img v-lazy="imgUrls3[1]" alt="图片">
+                        </div>
+                    </a>
+                </router-link>
+                <router-link to="/Products" tag="div" class="product" active-class="active">
+                    <a href="javascript:;">
+                        <div class="img_wrap">
+                            <img v-lazy="imgUrls3[2]" alt="图片">
+                        </div>
+                    </a>
+                </router-link>
+                <router-link to="/Products" tag="div" class="product" active-class="active">
+                    <a href="javascript:;">
+                        <div class="img_wrap">
+                            <img v-lazy="imgUrls3[3]" alt="图片">
                         </div>
                     </a>
                 </router-link>
@@ -101,7 +101,25 @@
 export default {
     data(){
         return {
-            left:true
+            left:true,
+            imgUrls1:[
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2db9763ca.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2dba63ced.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2dba749b4.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2dba9d0a7.jpeg'
+                ],
+            imgUrls2:[
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2dbabd024.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2dbac6c48.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2dbb2832d.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2dbb2942d.jpeg'
+                ],
+            imgUrls3:[
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2dbb53e3f.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2dbb69b88.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2e49634b8.jpeg',
+                'https://ooo.0o0.ooo/2017/11/27/5a1c2e4986a71.jpeg'
+                ]
         }
     },
     computed:{

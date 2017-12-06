@@ -3,47 +3,19 @@
         <h2 class="title">Trailers & Clips</h2>
         <ul class="Video_list" :class="{right,left}">
             <li>
-                <router-link to="/Video" tag="div" class="Video" active-class="active">
+                <router-link v-for="{imgUrl,index} in imgUrls1" :key="index" to="/Video" tag="div" class="Video" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/video-clip4.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Video" tag="div" class="Video" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/video-clip5.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Video" tag="div" class="Video" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/video-clip6.jpeg" alt="图片">
+                            <img v-lazy="imgUrl" alt="图片">
                         </div>
                     </a>
                 </router-link>
             </li>
             <li>
-                <router-link to="/Video" tag="div" class="Video" active-class="active">
+                <router-link v-for="{imgUrl,index} in imgUrls2" :key="index" to="/Video" tag="div" class="Video" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/video-clip1.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Video" tag="div" class="Video" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/video-clip2.jpeg" alt="图片">
-                        </div>
-                    </a>
-                </router-link>
-                <router-link to="/Video" tag="div" class="Video" active-class="active">
-                    <a href="javascript:;">
-                        <div class="img_wrap">
-                            <img src="../../assets/images/video-clip3.jpeg" alt="图片">
+                            <img v-lazy="imgUrl" alt="图片">
                         </div>
                     </a>
                 </router-link>
@@ -57,7 +29,17 @@
 export default {
     data(){
         return {
-            left:true
+            left:true,
+            imgUrls1:[
+                "https://i.loli.net/2017/12/01/5a21080c46ff1.jpeg",
+                "https://i.loli.net/2017/12/01/5a21080d61297.jpeg",
+                "https://i.loli.net/2017/12/01/5a21080d758bf.jpeg"
+            ],
+            imgUrls2:[
+                "https://i.loli.net/2017/12/01/5a21080da165c.jpeg",
+                "https://i.loli.net/2017/12/01/5a21080f565eb.jpeg",
+                "https://i.loli.net/2017/12/01/5a21081061b23.jpeg"
+            ]
         }
     },
     computed:{

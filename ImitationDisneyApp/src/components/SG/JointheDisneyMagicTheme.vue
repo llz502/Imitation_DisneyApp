@@ -5,7 +5,7 @@
                 <router-link to="/TV" tag="div" class="tv" active-class="active">
                     <a href="javascript:;">
                         <div class="img_wrap">
-                            <img src="../../assets/images/JointheDisneyMagicTheme.jpeg" alt="图片">
+                            <img v-lazy="imgUrl" alt="图片">
                         </div>
                     </a>
                 </router-link>
@@ -14,13 +14,13 @@
     </div>
 </template>
 <script>
-// export default {
-//   data () {
-//     return {
-//       imgUrl: 'https://i.loli.net/2017/11/27/5a1c075c50e64.jpeg' // String../../assets/images/JointheDisneyMagicTheme.jpeg
-//     }
-//   }
-// }
+export default {
+  data () {
+    return {
+      imgUrl: 'https://i.loli.net/2017/11/27/5a1c075c50e64.jpeg' // String../../assets/images/JointheDisneyMagicTheme.jpeg
+    }
+  }
+}
 </script>
 <style scoped>
     .sg_tv_wrap {

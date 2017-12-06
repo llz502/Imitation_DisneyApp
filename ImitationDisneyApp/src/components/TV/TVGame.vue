@@ -3,61 +3,19 @@
             <h2 class="title">Most Popular Games</h2>
             <ul class="TV_list" :class="{right,left}">
                 <li>
-                    <router-link to="/TVs" tag="div" class="TV" active-class="active">
+                    <router-link v-for="{imgUrl,index} in imgUrls1" :key="index" to="/TVs" tag="div" class="TV" active-class="active">
                         <a href="javascript:;">
                             <div class="img_wrap">
-                                <img src="../../assets/images/TV-popular-game1.jpeg" alt="图片">
-                            </div>
-                        </a>
-                    </router-link>
-                    <router-link to="/TVs" tag="div" class="TV" active-class="active">
-                        <a href="javascript:;">
-                            <div class="img_wrap">
-                                <img src="../../assets/images/TV-popular-game2.jpeg" alt="图片">
-                            </div>
-                        </a>
-                    </router-link>
-                    <router-link to="/TVs" tag="div" class="TV" active-class="active">
-                        <a href="javascript:;">
-                            <div class="img_wrap">
-                                <img src="../../assets/images/TV-popular-game3.jpeg" alt="图片">
-                            </div>
-                        </a>
-                    </router-link>
-                    <router-link to="/TVs" tag="div" class="TV" active-class="active">
-                        <a href="javascript:;">
-                            <div class="img_wrap">
-                                <img src="../../assets/images/TV-popular-game4.jpeg" alt="图片">
+                                <img v-lazy="imgUrl" alt="图片">
                             </div>
                         </a>
                     </router-link>
                 </li>
                 <li>
-                    <router-link to="/TVs" tag="div" class="TV" active-class="active">
+                    <router-link v-for="{imgUrl,index} in imgUrls2" :key="index" to="/TVs" tag="div" class="TV" active-class="active">
                         <a href="javascript:;">
                             <div class="img_wrap">
-                                <img src="../../assets/images/TV-popular-game5.jpeg" alt="图片">
-                            </div>
-                        </a>
-                    </router-link>
-                    <router-link to="/TVs" tag="div" class="TV" active-class="active">
-                        <a href="javascript:;">
-                            <div class="img_wrap">
-                                <img src="../../assets/images/TV-popular-game6.jpeg" alt="图片">
-                            </div>
-                        </a>
-                    </router-link>
-                    <router-link to="/TVs" tag="div" class="TV" active-class="active">
-                        <a href="javascript:;">
-                            <div class="img_wrap">
-                                <img src="../../assets/images/TV-popular-game7.jpeg" alt="图片">
-                            </div>
-                        </a>
-                    </router-link>
-                    <router-link to="/TVs" tag="div" class="TV" active-class="active">
-                        <a href="javascript:;">
-                            <div class="img_wrap">
-                                <img src="../../assets/images/TV-popular-game8.jpeg" alt="图片">
+                                <img v-lazy="imgUrl" alt="图片">
                             </div>
                         </a>
                     </router-link>
@@ -71,7 +29,19 @@
     export default {
         data(){
             return {
-                left:true
+                left:true,
+                imgUrls1:[
+                "https://i.loli.net/2017/12/01/5a2101e79d715.jpeg",
+                "https://i.loli.net/2017/12/01/5a2101e9690cf.jpeg",
+                "https://i.loli.net/2017/12/01/5a2101e979fb1.jpeg",
+                "https://i.loli.net/2017/12/01/5a2101e97baa0.jpeg"
+                ],
+                imgUrls2:[
+                "https://i.loli.net/2017/12/01/5a2101e998903.jpeg",
+                "https://i.loli.net/2017/12/01/5a2101e99de95.jpeg",
+                "https://i.loli.net/2017/12/01/5a2101e9ea892.jpeg",
+                "https://i.loli.net/2017/12/01/5a2101ea009de.jpeg"
+                ],
             }
         },
         computed:{
